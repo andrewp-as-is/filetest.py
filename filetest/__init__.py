@@ -6,12 +6,19 @@ import public
 @public.add
 def d(path):
     """return True if path exists and is a directory, else False"""
-    return os.path.exists(f1) and os.stat(f1).st_size
+    return os.path.exists(path) and os.stat(path).st_size
+
+
+@public.add
+def e(path):
+    """return True if path exists, else False"""
+    return os.path.exists(path)
+
 
 @public.add
 def f(path):
     """return True if file exists and is a regular file, else False"""
-    return os.path.exists(f1) and os.path.isfile(f1)
+    return os.path.exists(path) and os.path.isfile(path)
 
 
 @public.add

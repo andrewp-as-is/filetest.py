@@ -16,6 +16,7 @@ $ [sudo] pip install filetest
 function|`__doc__`
 -|-
 `filetest.d(path)` |return True if path exists and is a directory, else False
+`filetest.e(path)` |return True if path exists, else False
 `filetest.f(path)` |return True if file exists and is a regular file, else False
 `filetest.nt(path1, path2)` |return True if path1 is newer than path2, else False
 `filetest.ot(path1, path2)` |return True if path1 is older than path2, else False
